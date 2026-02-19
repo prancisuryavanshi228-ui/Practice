@@ -1,0 +1,114 @@
+/* ==============================
+   Base Theme Variables
+   ============================== */
+:root {
+  --bg: #f6f8fc;
+  --text: #111827;
+  --muted: #6b7280;
+  --primary: #2563eb;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+}
+
+/* Global page foundation */
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* ==============================
+   Navbar
+   ============================== */
+.custom-navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(17, 24, 39, 0.06);
+}
+
+.navbar-brand {
+  letter-spacing: 0.2px;
+}
+
+/* ==============================
+   Hero
+   ============================== */
+.hero-section {
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+}
+
+.py-lg-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.hero-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08);
+}
+
+.mock-chart {
+  height: 130px;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.bar {
+  flex: 1;
+  border-radius: 0.4rem;
+  background: linear-gradient(180deg, #60a5fa 0%, #2563eb 100%);
+}
+
+.bar-1 { height: 40%; }
+.bar-2 { height: 55%; }
+.bar-3 { height: 35%; }
+.bar-4 { height: 75%; }
+.bar-5 { height: 60%; }
+
+.card-lite {
+  border: 1px dashed #cbd5e1;
+  background-color: #f8fafc;
+}
+
+/* ==============================
+   Features
+   ============================== */
+.section-heading {
+  max-width: 620px;
+}
+
+.feature-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(2, 6, 23, 0.08);
+}
+
+/* ==============================
+   Responsive Tweaks
+   ============================== */
+@media (max-width: 991.98px) {
+  .hero-section {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .display-5 {
+    font-size: 2rem;
+  }
+}
